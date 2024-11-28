@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="cursor">
+        <svg width="26" height="28" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M19.1307 23.3079L21.7075 21.0462L8.17685 5.63035L10.7537 3.36868L8.49855 0.799364L5.92175 3.06104L3.66664 0.491733L1.08984 2.75341L3.34495 5.32272L0.768144 7.5844L3.02325 10.1537L5.60005 7.89203L19.1307 23.3079ZM2.70155 14.9847L0.446448 12.4154L3.02325 10.1537L5.27835 12.723L2.70155 14.9847ZM2.70155 14.9847L4.95666 17.554L2.37986 19.8157L0.124751 17.2464L2.70155 14.9847ZM15.5856 3.67631L13.3305 1.107L10.7537 3.36868L13.0088 5.93799L15.5856 3.67631ZM15.5856 3.67631L17.8407 6.24562L20.4175 3.98394L18.1624 1.41463L15.5856 3.67631Z"
+                fill="inherit" />
+        </svg>
+    </div>
+    <section class="hello container blue">
+        <article class="hello-msg border">
+            <h1>¡Hola!</h1>
+            <h2>Vamos a crear un documento que le sirva a tu proyecto</h2>
+        </article>
+        <button class="go-btn border btn-interaction">¿Empezamos?</button>
+    </section>
+    <section class="progress inactive">
+        <p class="white">progreso</p>
+        <div class="barra">
+            <div class="contenido"></div>
+        </div>
+    </section>
+    <main class="cont-form">
+
+        <section class="section-form orange inactive" data-active="false">
+            <h2 class="section-form-title">Empecemos por ti</h2>
+            <form class="formulario">
+                <!-- name -->
+                <div class="conjunto">
+                    <label for="name" class="pregunta border one"> ¿Cómo te llamas?</label>
+                    <input type="text" id="name" name="name" class="respuesta border two"
+                        placeholder="introduce tu nombre" required>
+                </div>
+                <!-- pronombres -->
+                <div class="conjunto">
+                    <h3 class="pregunta border one">¿Cómo me dirijo a ti?</h3>
+                    <fieldset class="respuesta border two">
+                        <input type="radio" name="pronouns" id="masc" value="masculino">
+                        <label for="masc">Masculino</label>
+
+                        <input type="radio" name="pronouns" id="fem" value="femenino">
+                        <label for="fem">Femenino</label>
+
+                        <input type="radio" name="pronouns" id="neutro" value="neutro">
+                        <label for="neutro">Neutro</label>
+                    </fieldset>
+                </div>
+
+                <!-- contacto -->
+                <div class="conjunto">
+                    <label for="contacto" class="pregunta border one">¿Cómo me pongo en contacto contigo?</label>
+                    <input type="text" id="contacto" name="contacto" class="respuesta border two"
+                        placeholder="Número de telefono, correo..." required>
+                </div>
+
+                <button class="btn-go border btn-interaction">Continuar</button>
+            </form>
+        </section>
+
+        <section class="section-form blue inactive" data-active="false">
+            <h2 class="section-form-title">Información sobre tu empresa</h2>
+            <form class="formulario">
+                <!-- resumen -->
+                <div class="conjunto">
+                    <label for="resumen" class="pregunta border one"> ¿Cómo describirías tu empresa en una
+                        frase?</label>
+                    <textarea name="resumen" id="resumen" placeholder="Somos una empresa dedicada a..." required
+                        class="respuesta border two"></textarea>
+                </div>
+                <!-- unico -->
+                <div class="conjunto">
+                    <label for="unico" class="pregunta border one"> ¿Qué hace única a tu empresa?</label>
+                    <textarea name="unico" id="unico" placeholder="Somos el número 1 en..." required
+                        class="respuesta border two"></textarea>
+                </div>
+                <!-- valores -->
+                <div class="conjunto">
+                    <label for="valores" class="pregunta border one"> ¿Cuáles son los valores fundamentales de tu
+                        empresa?</label>
+                    <textarea name="valores" id="valores" placeholder="Compromiso, innovación, excelencia..." required
+                        class="respuesta border two"></textarea>
+                    <!-- empresa -->
+                    <div class="conjunto">
+                        <label for="empresa" class="pregunta border one"> ¿Cómo se llama tu empresa?</label>
+                        <textarea name="empresa" id="empresa"
+                            placeholder="Si aún no tenéis nombre, ¿Cuál tenéis en mente?" required
+                            class="respuesta border two"></textarea>
+                    </div>
+                    <div class="conjunto row">
+                        <button class="btn-back border btn-interaction">Atrás</button>
+                        <button class="btn-go border btn-interaction">Continuar</button>
+                    </div>
+            </form>
+        </section>
+
+        <section class="section-form orange inactive" data-active="false">
+            <h2 class="section-form-title">Información sobre tu proyecto</h2>
+            <form class="formulario">
+                <!-- objetivos -->
+                <div class="conjunto">
+                    <label for="objetivos" class="pregunta border one"> ¿Qué servicio necesitas?</label>
+                    <select name="objetivos" id="objetivos" class="respuesta border two">
+                        <option value="branding">Branding</option>
+                        <option value="web">Diseño Web</option>
+                        <option value="foto">Fotografía/Contenido</option>
+                        <option value="otro">No lo tengo claro</option>
+                    </select>
+                </div>
+                <!-- objetivos -->
+                <div class="conjunto">
+                    <label for="medir" class="pregunta border one"> ¿Qué objetivo tiene el proyecto?</label>
+                    <textarea name="medir" id="medir" placeholder="Nueva imagen, atraer clientes..." required
+                        class="respuesta border two"></textarea>
+                </div>
+                <!-- presupuesto -->
+                <div class="conjunto">
+                    <label for="presupuesto" class="pregunta border one"> ¿Cuál es tu presupuesto?</label>
+                    <select name="presupuesto" id="presupuesto" class="respuesta border two">
+                        <option value="select">Selecciona una opción</option>
+                        <option value="no">Menos de 500€</option>
+                        <option value="basic">Entre 500€ y 1.200€</option>
+                        <option value="medium">Entre 1.200€ y 3.000€</option>
+                        <option value="premium">Más de 3.000€</option>
+                    </select>
+                </div>
+                <!-- situacián actual-->
+                <div class="conjunto">
+                    <label for="situacion" class="pregunta border one"> ¿Cuál es la situación actual de tu
+                        empresa?</label>
+                    <textarea name="situacion" id="situacion" placeholder="En crecimiento, buscando expandirnos..."
+                        required class="respuesta border two"></textarea>
+                </div>
+                <!-- botones -->
+                <div class="conjunto row">
+                    <button class="btn-back border  btn-interaction">Atrás</button>
+                    <button class="btn-go border  btn-interaction">Finalizar</button>
+                </div>
+            </form>
+        </section>
+        <section class="final section-form blue inactive">
+            <article class="final-cont">
+                <h2 class="final-title">¡Genial! Ya tenemos todos los datos necesarios</h2>
+                <div class="conjunto row">
+                    <button class="btn-download border btn-interaction">descargar pdf</button>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="js/gsap/gsap.min.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/pdf.js"></script>
+</body>
+
+</html>

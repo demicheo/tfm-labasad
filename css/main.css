@@ -1,0 +1,368 @@
+/*COMMON*/
+:root {
+    /*colores*/
+    --orange: #FF5B23;
+    --blue: #3A39FF;
+    --yellow: #F2B900;
+    --black: #000;
+    --white: #fff;
+    /*fuentes*/
+    --park-20-reg: normal 400 1.25rem/100% 'Parkinsans', serif;
+    --park-20-bold: normal 500 1.25rem/100% 'Parkinsans', serif;
+    --park-24-bold: normal 700 1.5rem/100% 'Parkinsans', serif;
+    --park-24-reg: normal 500 1.5rem/100% 'Parkinsans', serif;
+    --park-bigest: normal 600 2rem/100% 'Parkinsans', serif;
+    /*espaciado*/
+    --xxs: 0.25rem;
+    --xs: 0.5rem;
+    --s: 1rem;
+    --m: 1.5rem;
+    --l: 2rem;
+    --xl: 3rem;
+    --xxl: 4rem;
+    --xxxl: 6rem;
+}
+*{
+    color: var(--black);
+}
+.white{
+    color: var(--white);
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: var(--m);
+}
+
+.container.orange {
+    background-color: var(--orange);
+}
+
+.container.blue {
+    background-color: var(--blue);
+}
+
+.container.full {
+    min-height: 100vh;
+}
+
+.border {
+    border: 4px solid var(--black);
+    border-radius: var(--m);
+    box-shadow: -5px 5px 0px 0px rgba(0, 0, 0, 0.55);
+}
+
+.border.one {
+    border-bottom-left-radius: 0;
+}
+
+.border.two {
+    border-bottom-right-radius: 0;
+}
+
+
+.btn-interaction{
+    transition: all .3s ease;
+}
+
+.btn-interaction:hover{
+    transform: translateX(-5px) translateY(5px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.55);
+    --blue:#FF5B23;
+    --orange:#3A39FF;
+    --black: #fff;
+    --white: #000;
+}
+
+
+/* CURSOR */
+*{  cursor: none;
+}
+.cursor {
+    position: fixed;
+    overflow: visible;
+    width: 26px;
+    height: 24px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.cursor svg {
+    overflow: visible;
+    width: 170%;
+    height: 170%;
+    fill: var(--black);
+}
+
+/*INDEX*/
+.cont-home {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--m);
+}
+
+.cont-message {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s);
+}
+
+.message-title {
+    background-color: var(--white);
+    border-bottom-left-radius: 0;
+    padding: var(--s);
+    font: var(--park-bigest);
+    color: var(--blue);
+}
+
+.message-btn {
+    border-radius: var(--s);
+
+    background-color: var(--orange);
+    border-bottom-right-radius: 0;
+    padding: var(--xs) var(--s);
+    font: var(--park-24-bold);
+    color: var(--white);
+    align-self: end;
+}
+.message-btn:hover {
+    color: white;
+}
+
+/*OPTIONS*/
+.cont-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options {
+    margin-top: var(--m);
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    justify-content: space-around;
+}
+
+.options-title {
+    margin-top: var(--xs);
+    font: var(--park-bigest);
+    text-align: center;
+    line-height: 120%;
+}
+
+.link-cont {
+    padding-left: var(--m);
+    padding-right: var(--m);
+    display: flex;
+}
+
+.link-cont.one {
+    justify-content: start;
+}
+
+.link-cont.two {
+    justify-content: end;
+}
+
+.options-link {
+    padding: var(--s);
+    font: var(--park-20-bold);
+    background-color: var(--white);
+    color: var(--orange);
+    max-width: 70%;
+}
+
+.options-link.two {
+    align-self: flex-end;
+}
+
+/*FORM*/
+.hello {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--s);
+}
+
+.hello-msg {
+    padding: var(--m);
+    background-color: var(--white);
+    font: var(--park-24-bold);
+    color: var(--blue);
+}
+
+.go-btn {
+    background-color: var(--orange);
+    padding: var(--s);
+    /* cursor: pointer; */
+    font: var(--park-24-reg);
+    color: var(--black);
+}
+
+.cont-form {
+    width: 100%;
+    /* height: 200vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.progress {
+    height: 70px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--s);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.barra {
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    width: 70%;
+    height: 20px;
+    border-radius: var(--m);
+    overflow: hidden;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue);
+    transform-origin: center left;
+    transform: scaleX(0%);
+    transition: all .5s ease-in-out;
+}
+
+
+/*start*/
+
+
+.section-form {
+    padding: var(--m);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-form.orange {
+    background-color: var(--orange);
+}
+
+.section-form.blue {
+    background-color: var(--blue);
+}
+
+.section-form-title {
+    font: var(--park-bigest);
+    align-self: start;
+    width: 100%;
+    padding-bottom: var(--s);
+    border-bottom: 4px solid var(--black);
+}
+
+.inactive {
+    display: none;
+}
+
+
+.formulario {
+    height: 80%;
+    /*ojo con esto*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.pregunta {
+    margin-top: var(--m);
+    padding: var(--m);
+    background-color: var(--white);
+    align-self: start;
+    min-width: 70%;
+    font: var(--park-20-bold);
+
+}
+
+.respuesta {
+    margin-top: var(--m);
+    padding: var(--m);
+    background-color: var(--white);
+    align-self: end;
+    min-width: 70%;
+    font: var(--park-20-reg);
+}
+
+.btn-go,
+.btn-send {
+    background-color: var(--blue);
+    color: var(--black);
+    padding: var(--s);
+    align-self: end;
+    margin-top: var(--m);
+}
+
+.btn-back {
+    background-color: var(--blue);
+    color: var(--black);
+    padding: var(--s);
+    align-self: start;
+    margin-top: var(--m);
+}
+
+.section-form.blue .btn-go,
+.section-form.blue .btn-back {
+    background-color: var(--orange);
+}
+
+.conjunto.row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-download{
+    background-color: var(--orange);
+    padding: var(--s);
+    transition: all .3s ease;
+    margin-top: var(--m);
+}
+
+.final-cont{
+    width: 70%;
+    align-self: center;
+}
+
+.final-title{
+    font: var(--park-bigest);
+}
