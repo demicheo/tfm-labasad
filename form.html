@@ -38,119 +38,127 @@
     <main class="cont-form">
 
         <section class="section-form orange inactive" data-active="false">
-            <h2 class="section-form-title">Empecemos por ti</h2>
-            <form class="formulario">
-                <!-- name -->
-                <div class="conjunto">
-                    <label for="name" class="pregunta border one"> ¿Cómo te llamas?</label>
-                    <input type="text" id="name" name="name" class="respuesta border two"
-                        placeholder="introduce tu nombre" required>
-                </div>
-                <!-- pronombres -->
-                <div class="conjunto">
-                    <h3 class="pregunta border one">¿Cómo me dirijo a ti?</h3>
-                    <fieldset class="respuesta border two">
-                        <input type="radio" name="pronouns" id="masc" value="masculino">
-                        <label for="masc">Masculino</label>
+            <div class="wrapp">
+                <h2 class="section-form-title">Empecemos por ti</h2>
+                <form class="formulario">
+                    <!-- name -->
+                    <div class="conjunto">
+                        <label for="name" class="pregunta border one"> ¿Cómo te llamas?</label>
+                        <input type="text" id="name" name="name" class="respuesta border two"
+                            placeholder="introduce tu nombre" required>
+                    </div>
+                    <!-- pronombres -->
+                    <div class="conjunto">
+                        <h3 class="pregunta border one">¿Cómo me dirijo a ti?</h3>
+                        <fieldset class="respuesta border two">
+                            <input type="radio" name="pronouns" id="masc" value="masculino">
+                            <label for="masc">Masculino</label>
 
-                        <input type="radio" name="pronouns" id="fem" value="femenino">
-                        <label for="fem">Femenino</label>
+                            <input type="radio" name="pronouns" id="fem" value="femenino">
+                            <label for="fem">Femenino</label>
 
-                        <input type="radio" name="pronouns" id="neutro" value="neutro">
-                        <label for="neutro">Neutro</label>
-                    </fieldset>
-                </div>
+                            <input type="radio" name="pronouns" id="neutro" value="neutro">
+                            <label for="neutro">Neutro</label>
+                        </fieldset>
+                    </div>
 
-                <!-- contacto -->
-                <div class="conjunto">
-                    <label for="contacto" class="pregunta border one">¿Cómo me pongo en contacto contigo?</label>
-                    <input type="text" id="contacto" name="contacto" class="respuesta border two"
-                        placeholder="Número de telefono, correo..." required>
-                </div>
+                    <!-- contacto -->
+                    <div class="conjunto">
+                        <label for="contacto" class="pregunta border one">¿Cómo me pongo en contacto contigo?</label>
+                        <input type="text" id="contacto" name="contacto" class="respuesta border two"
+                            placeholder="Número de telefono, correo..." required>
+                    </div>
 
-                <button class="btn-go border btn-interaction">Continuar</button>
-            </form>
+                    <button class="btn-go border btn-interaction">Continuar</button>
+                </form>
+            </div>
+
         </section>
 
         <section class="section-form blue inactive" data-active="false">
-            <h2 class="section-form-title">Información sobre tu empresa</h2>
-            <form class="formulario">
-                <!-- resumen -->
-                <div class="conjunto">
-                    <label for="resumen" class="pregunta border one"> ¿Cómo describirías tu empresa en una
-                        frase?</label>
-                    <textarea name="resumen" id="resumen" placeholder="Somos una empresa dedicada a..." required
-                        class="respuesta border two"></textarea>
-                </div>
-                <!-- unico -->
-                <div class="conjunto">
-                    <label for="unico" class="pregunta border one"> ¿Qué hace única a tu empresa?</label>
-                    <textarea name="unico" id="unico" placeholder="Somos el número 1 en..." required
-                        class="respuesta border two"></textarea>
-                </div>
-                <!-- valores -->
-                <div class="conjunto">
-                    <label for="valores" class="pregunta border one"> ¿Cuáles son los valores fundamentales de tu
-                        empresa?</label>
-                    <textarea name="valores" id="valores" placeholder="Compromiso, innovación, excelencia..." required
-                        class="respuesta border two"></textarea>
-                    <!-- empresa -->
+            <div class="wrapp">
+
+                <h2 class="section-form-title">Información sobre tu empresa</h2>
+                <form class="formulario">
+                    <!-- resumen -->
                     <div class="conjunto">
-                        <label for="empresa" class="pregunta border one"> ¿Cómo se llama tu empresa?</label>
-                        <textarea name="empresa" id="empresa"
-                            placeholder="Si aún no tenéis nombre, ¿Cuál tenéis en mente?" required
+                        <label for="resumen" class="pregunta border one"> ¿Cómo describirías tu empresa en una
+                            frase?</label>
+                        <textarea name="resumen" id="resumen" placeholder="Somos una empresa dedicada a..." required
                             class="respuesta border two"></textarea>
                     </div>
-                    <div class="conjunto row">
-                        <button class="btn-back border btn-interaction">Atrás</button>
-                        <button class="btn-go border btn-interaction">Continuar</button>
+                    <!-- unico -->
+                    <div class="conjunto">
+                        <label for="unico" class="pregunta border one"> ¿Qué hace única a tu empresa?</label>
+                        <textarea name="unico" id="unico" placeholder="Somos el número 1 en..." required
+                            class="respuesta border two"></textarea>
                     </div>
-            </form>
+                    <!-- valores -->
+                    <div class="conjunto">
+                        <label for="valores" class="pregunta border one"> ¿Cuáles son los valores fundamentales de tu
+                            empresa?</label>
+                        <textarea name="valores" id="valores" placeholder="Compromiso, innovación, excelencia..."
+                            required class="respuesta border two"></textarea>
+                        <!-- empresa -->
+                        <div class="conjunto">
+                            <label for="empresa" class="pregunta border one"> ¿Cómo se llama tu empresa?</label>
+                            <textarea name="empresa" id="empresa"
+                                placeholder="Si aún no tenéis nombre, ¿Cuál tenéis en mente?" required
+                                class="respuesta border two"></textarea>
+                        </div>
+                        <div class="conjunto row">
+                            <button class="btn-back border btn-interaction">Atrás</button>
+                            <button class="btn-go border btn-interaction">Continuar</button>
+                        </div>
+                </form>
+            </div>
         </section>
 
         <section class="section-form orange inactive" data-active="false">
-            <h2 class="section-form-title">Información sobre tu proyecto</h2>
-            <form class="formulario">
-                <!-- objetivos -->
-                <div class="conjunto">
-                    <label for="objetivos" class="pregunta border one"> ¿Qué servicio necesitas?</label>
-                    <select name="objetivos" id="objetivos" class="respuesta border two">
-                        <option value="branding">Branding</option>
-                        <option value="web">Diseño Web</option>
-                        <option value="foto">Fotografía/Contenido</option>
-                        <option value="otro">No lo tengo claro</option>
-                    </select>
-                </div>
-                <!-- objetivos -->
-                <div class="conjunto">
-                    <label for="medir" class="pregunta border one"> ¿Qué objetivo tiene el proyecto?</label>
-                    <textarea name="medir" id="medir" placeholder="Nueva imagen, atraer clientes..." required
-                        class="respuesta border two"></textarea>
-                </div>
-                <!-- presupuesto -->
-                <div class="conjunto">
-                    <label for="presupuesto" class="pregunta border one"> ¿Cuál es tu presupuesto?</label>
-                    <select name="presupuesto" id="presupuesto" class="respuesta border two">
-                        <option value="select">Selecciona una opción</option>
-                        <option value="no">Menos de 500€</option>
-                        <option value="basic">Entre 500€ y 1.200€</option>
-                        <option value="medium">Entre 1.200€ y 3.000€</option>
-                        <option value="premium">Más de 3.000€</option>
-                    </select>
-                </div>
-                <!-- situacián actual-->
-                <div class="conjunto">
-                    <label for="situacion" class="pregunta border one"> ¿Cuál es la situación actual de tu
-                        empresa?</label>
-                    <textarea name="situacion" id="situacion" placeholder="En crecimiento, buscando expandirnos..."
-                        required class="respuesta border two"></textarea>
-                </div>
-                <!-- botones -->
-                <div class="conjunto row">
-                    <button class="btn-back border  btn-interaction">Atrás</button>
-                    <button class="btn-go border  btn-interaction">Finalizar</button>
-                </div>
-            </form>
+            <div class="wrapp">
+                <h2 class="section-form-title">Información sobre tu proyecto</h2>
+                <form class="formulario">
+                    <!-- objetivos -->
+                    <div class="conjunto">
+                        <label for="objetivos" class="pregunta border one"> ¿Qué servicio necesitas?</label>
+                        <select name="objetivos" id="objetivos" class="respuesta border two">
+                            <option value="branding">Branding</option>
+                            <option value="web">Diseño Web</option>
+                            <option value="foto">Fotografía/Contenido</option>
+                            <option value="otro">No lo tengo claro</option>
+                        </select>
+                    </div>
+                    <!-- objetivos -->
+                    <div class="conjunto">
+                        <label for="medir" class="pregunta border one"> ¿Qué objetivo tiene el proyecto?</label>
+                        <textarea name="medir" id="medir" placeholder="Nueva imagen, atraer clientes..." required
+                            class="respuesta border two"></textarea>
+                    </div>
+                    <!-- presupuesto -->
+                    <div class="conjunto">
+                        <label for="presupuesto" class="pregunta border one"> ¿Cuál es tu presupuesto?</label>
+                        <select name="presupuesto" id="presupuesto" class="respuesta border two">
+                            <option value="select">Selecciona una opción</option>
+                            <option value="no">Menos de 500€</option>
+                            <option value="basic">Entre 500€ y 1.200€</option>
+                            <option value="medium">Entre 1.200€ y 3.000€</option>
+                            <option value="premium">Más de 3.000€</option>
+                        </select>
+                    </div>
+                    <!-- situacián actual-->
+                    <div class="conjunto">
+                        <label for="situacion" class="pregunta border one"> ¿Cuál es la situación actual de tu
+                            empresa?</label>
+                        <textarea name="situacion" id="situacion" placeholder="En crecimiento, buscando expandirnos..."
+                            required class="respuesta border two"></textarea>
+                    </div>
+                    <!-- botones -->
+                    <div class="conjunto row">
+                        <button class="btn-back border  btn-interaction">Atrás</button>
+                        <button class="btn-go border  btn-interaction">Finalizar</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <section class="final section-form blue inactive">
             <article class="final-cont">
